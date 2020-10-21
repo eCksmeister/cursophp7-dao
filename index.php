@@ -27,9 +27,18 @@ $aluno->insert();
 echo $aluno;
 */
 
+/*
+//Altera um usuario existente
 $usuario=new Usuario();
 $usuario->loadById(5);
 $usuario->update("professor","!#$%&");
+echo $usuario;
+*/
+
+//Apaga um cliente existente
+$usuario=new Usuario();
+$usuario->loadById(5);
+$usuario->delete();
 echo $usuario;
 
 ?>
